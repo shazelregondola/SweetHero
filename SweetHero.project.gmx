@@ -4,25 +4,125 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_menu</sound>
+    <sound>sound\snd_hover</sound>
+    <sound>sound\snd_select</sound>
+    <sound>sound\snd_rm1</sound>
+    <sound>sound\collision_se</sound>
+    <sound>sound\snd_rm2</sound>
+    <sound>sound\snd_rm5</sound>
+  </sounds>
   <sprites name="sprites">
-    <sprite>sprites\arrow</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprites name="player">
+      <sprite>sprites\player_left</sprite>
+      <sprite>sprites\player_right</sprite>
+      <sprite>sprites\player_run_right</sprite>
+      <sprite>sprites\player_run_left</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\ipis_right</sprite>
+      <sprite>sprites\ipis_left</sprite>
+      <sprite>sprites\worm_right</sprite>
+      <sprite>sprites\worm_left</sprite>
+      <sprite>sprites\daga_right</sprite>
+      <sprite>sprites\daga_left</sprite>
+      <sprite>sprites\spider_down</sprite>
+      <sprite>sprites\spider_up</sprite>
+    </sprites>
+    <sprites name="menu">
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_setting</sprite>
+      <sprite>sprites\spr_help</sprite>
+      <sprite>sprites\spr_quit</sprite>
+      <sprite>sprites\spr_cursor</sprite>
+    </sprites>
+    <sprites name="blocks">
+      <sprite>sprites\spr_blocks2</sprite>
+      <sprite>sprites\spr_blocks</sprite>
+      <sprite>sprites\spr_blocks3</sprite>
+      <sprite>sprites\spr_blocks4</sprite>
+      <sprite>sprites\spr_blocks5</sprite>
+    </sprites>
+    <sprites name="option">
+      <sprite>sprites\home</sprite>
+      <sprite>sprites\home_hover</sprite>
+      <sprite>sprites\pause</sprite>
+    </sprites>
+    <sprites name="door">
+      <sprite>sprites\door1</sprite>
+      <sprite>sprites\door2</sprite>
+      <sprite>sprites\door3</sprite>
+      <sprite>sprites\door4</sprite>
+    </sprites>
+    <sprites name="points">
+      <sprite>sprites\point</sprite>
+      <sprite>sprites\point2</sprite>
+    </sprites>
+    <sprite>sprites\web</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_menu</background>
+    <background>background\bg_rm1</background>
+    <background>background\bg_help</background>
+    <background>background\bg_rm2</background>
+    <background>background\bg_rm3</background>
+    <background>background\bg_rm4</background>
+    <background>background\bg_rm5</background>
+  </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\scr_menu.gml</script>
-  </scripts>
   <fonts name="fonts">
-    <font>fonts\fnt1</font>
+    <font>fonts\score_font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\object1</object>
+    <objects name="menu">
+      <object>objects\obj_start</object>
+      <object>objects\obj_help</object>
+      <object>objects\obj_setting</object>
+      <object>objects\obj_quit</object>
+      <object>objects\obj_cursor</object>
+      <object>objects\obj_bgmusic</object>
+    </objects>
+    <object>objects\obj_hero</object>
+    <objects name="obj_block">
+      <object>objects\obj_blocks2</object>
+      <object>objects\obj_blocks</object>
+      <object>objects\obj_blocks3</object>
+      <object>objects\obj_blocks4</object>
+      <object>objects\obj_blocks5</object>
+    </objects>
+    <objects name="obj_option">
+      <object>objects\obj_home</object>
+      <object>objects\obj_pause</object>
+    </objects>
+    <objects name="door">
+      <object>objects\obj_door1</object>
+      <object>objects\obj_door2</object>
+      <object>objects\obj_door3</object>
+      <object>objects\obj_door4</object>
+    </objects>
+    <objects name="obj_points">
+      <object>objects\obj_point</object>
+      <object>objects\obj_point2</object>
+    </objects>
+    <objects name="obj_enemy">
+      <object>objects\obj_worm</object>
+      <object>objects\obj_daga</object>
+      <object>objects\obj_spider</object>
+      <object>objects\obj_ipis</object>
+    </objects>
+    <object>objects\score_lives</object>
+    <object>objects\obj_1</object>
+    <object>objects\obj_web</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rM1</room>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_help</room>
+    <room>rooms\rm1</room>
     <room>rooms\rm2</room>
+    <room>rooms\rm3</room>
+    <room>rooms\rm4</room>
+    <room>rooms\rm5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
