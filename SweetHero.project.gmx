@@ -62,12 +62,20 @@
     </sprites>
     <sprite>sprites\web</sprite>
     <sprite>sprites\sh</sprite>
-    <sprite>sprites\spr_about</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_arrow2</sprite>
+    <sprites name="helpspr">
+      <sprite>sprites\spr_arrow2</sprite>
+      <sprite>sprites\spr_about</sprite>
+      <sprite>sprites\spr_ok</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_sf</sprite>
+    </sprites>
+    <sprite>sprites\spr_ok2</sprite>
+    <sprite>sprites\spr_snd2</sprite>
+    <sprite>sprites\spr_snd</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
+    <background>background\bg_set</background>
     <background>background\bg_help</background>
     <background>background\bg_rm1</background>
     <background>background\bg_rm2</background>
@@ -120,12 +128,18 @@
     <object>objects\obj_1</object>
     <object>objects\obj_web</object>
     <object>objects\obj_sh</object>
-    <object>objects\obj_about</object>
-    <object>objects\obj_arrow</object>
-    <object>objects\obj_arrow2</object>
+    <objects name="help">
+      <object>objects\obj_about</object>
+      <object>objects\obj_arrow</object>
+      <object>objects\obj_ok</object>
+      <object>objects\obj_arrow2</object>
+      <object>objects\obj_sf</object>
+    </objects>
+    <object>objects\obj_ok2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_set</room>
     <room>rooms\rm_help</room>
     <room>rooms\rm1</room>
     <room>rooms\rm2</room>
